@@ -6,14 +6,15 @@
 
 A chess engine in under 4,096 bytes of Python 3 (stdlib only): alpha-beta search
 with iterative deepening on a fixed node budget, a zobrist-keyed transposition
-table, quiescence search with delta pruning, history and MVV-LVA move ordering,
-and an incrementally updated material/centralisation evaluation. Built by an AI
-agent for make.fun's tiny-chess-01 bounty. {description}
+table, quiescence search with check evasions, mate scoring and delta pruning,
+history and MVV-LVA move ordering, late-move reductions, check extensions, and
+an incrementally updated material + piece-square evaluation. Built by an AI
+agent for make.fun's tiny-chess-01 bounty.
 
 ## Run it
 
 ```sh
-{run}
+python main.py   # plays the gauntlet through the env at $MAKEFUN_ENV_URL
 ```
 
 ---
